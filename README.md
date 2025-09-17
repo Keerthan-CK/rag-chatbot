@@ -30,8 +30,8 @@
 
 ### Clone the repo
 ```bash
-git clone https://github.com/your-username/my-productivity-app.git
-cd my-productivity-app
+git clone https://github.com/your-username/rag-chatbot.git
+cd rag-chatbot
 
 ## Install dependencies
 npm install
@@ -39,20 +39,16 @@ npm install
 pnpm install
 # or
 yarn install
-
+```
 ---
 
 ## 🛠️ Tech Stack
 
-Frontend: Next.js 15, React 19, Tailwind CSS 4, Motion, Lottie
-
-UI Tools: Lucide React, MUI Sidebar, HoverBorderGradient, GridPattern
-
-Backend: Express, Supabase Auth, PostgreSQL
-
-AI & RAG: LangChain, Google Generative AI (Gemini), Embeddings
-
-File Processing: pdf-parse, mammoth (DOCX → text)
+- Frontend: Next.js 15, React 19, Tailwind CSS 4, Motion, Lottie
+- UI Tools: Lucide React, MUI Sidebar, HoverBorderGradient, GridPattern
+- Backend: Express, Supabase Auth, PostgreSQL
+- AI & RAG: LangChain, Google Generative AI (Gemini), Embeddings
+- File Processing: pdf-parse, mammoth (DOCX → text)
 
 ---
 
@@ -60,18 +56,11 @@ File Processing: pdf-parse, mammoth (DOCX → text)
 
 Some niche but super helpful packages:
 
-langchain → for building RAG pipelines
-
-@google/generative-ai → Gemini API SDK
-
-mammoth → clean .docx → text extraction
-
-pdf-parse → parse PDF text
-
-motion → smooth animations
-
-lottie-react → animated loaders / effects
-
-react-mui-sidebar → easy sidebar
-
-tw-animate-css → Tailwind + animate.css utility
+-langchain → for building RAG pipelines
+- @google/generative-ai → Gemini API SDK
+- mammoth → clean .docx → text extraction
+- pdf-parse → parse PDF text
+- motion → smooth animations
+- lottie-react → animated loaders / effects
+- react-mui-sidebar → easy sidebar
+- tw-animate-css → Tailwind + animate.css utility
