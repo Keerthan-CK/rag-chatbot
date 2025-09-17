@@ -26,6 +26,29 @@
 - 🔐 Magic Link authentication (Supabase)  
 - 📚 Knowledge chunking & embeddings with **LangChain**  
 
+## 🛠️ Tech Stack
+
+- Frontend: Next.js 15, React 19, Tailwind CSS 4, Motion, Lottie
+- UI Tools: Lucide React, MUI Sidebar, HoverBorderGradient, GridPattern
+- Backend: Express, Supabase Auth, PostgreSQL
+- AI & RAG: LangChain, Google Generative AI (Gemini), Embeddings
+- File Processing: pdf-parse, mammoth (DOCX → text)
+
+---
+
+## 📦 Dependencies Highlight
+
+Some niche but super helpful packages:
+
+-langchain → for building RAG pipelines
+- @google/generative-ai → Gemini API SDK
+- mammoth → clean .docx → text extraction
+- pdf-parse → parse PDF text
+- motion → smooth animations
+- lottie-react → animated loaders / effects
+- react-mui-sidebar → easy sidebar
+- tw-animate-css → Tailwind + animate.css utility
+
 ## 🚀 Getting Started
 
 ### Clone the repo
@@ -40,27 +63,3 @@ pnpm install
 # or
 yarn install
 ```
----
-
-## 🛠️ Tech Stack
-
-- Frontend: Next.js 15, React 19, Tailwind CSS 4, Motion, Lottie
-- UI Tools: Lucide React, MUI Sidebar, HoverBorderGradient, GridPattern
-- Backend: Express, Supabase Auth, PostgreSQL
-- AI & RAG: LangChain, Google Generative AI (Gemini), Embeddings
-- File Processing: pdf-parse, mammoth (DOCX → text)
-
----
-
-# 📦 Dependencies Highlight
-
-Some niche but super helpful packages:
-
--langchain → for building RAG pipelines
-- @google/generative-ai → Gemini API SDK
-- mammoth → clean .docx → text extraction
-- pdf-parse → parse PDF text
-- motion → smooth animations
-- lottie-react → animated loaders / effects
-- react-mui-sidebar → easy sidebar
-- tw-animate-css → Tailwind + animate.css utility
