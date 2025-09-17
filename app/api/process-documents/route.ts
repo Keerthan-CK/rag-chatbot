@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import { supabase } from "@/lib/supabaseClient";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import pdfParse from "pdf-parse"; // needs install
-import * as fs from "fs";
+import pdfParse from "pdf-parse"; 
+
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
@@ -10,7 +10,7 @@ export async function POST(req: Request) {
   try {
     const { docId } = await req.json();
 
-    // Fetch document info
+   
     const { data: doc, error: docError } = await supabase
       .from("documents")
       .select("*")
@@ -38,7 +38,7 @@ export async function POST(req: Request) {
     }
 
     // Split into chunks
-    const chunkSize = 500; // characters
+    const chunkSize = 500; 
     const chunks = [];
     for (let i = 0; i < text.length; i += chunkSize) {
       chunks.push(text.slice(i, i + chunkSize));

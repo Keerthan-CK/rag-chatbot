@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The R.A.G Chatbot 
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-15.4-black?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.1-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38bdf8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-2.54-3ECF8E?logo=supabase&logoColor=white)](https://supabase.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer--Motion-12.23-ff69b4?logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
+</div>
+
+---
+
+![Demo GIF](./public/rag.gif)  
+![App Screenshot](./public/chat.png)  
+
+---
+
+## ✨ Features  
+- 📄 Upload PDFs / Docs / Text files  
+- 💬 Chat with documents using **RAG + Gemini AI**  
+- ⚡ Real-time streaming responses  
+- 🎨 Beautiful UI built with **TailwindCSS, Lucide Icons, Motion, and Lottie**  
+- 🔐 Magic Link authentication (Supabase)  
+- 📚 Knowledge chunking & embeddings with **LangChain**  
+
+## 🚀 Getting Started
+
+### Clone the repo
 ```bash
-npm run dev
+git clone https://github.com/your-username/my-productivity-app.git
+cd my-productivity-app
+
+## Install dependencies
+npm install
 # or
-yarn dev
+pnpm install
 # or
-pnpm dev
-# or
-bun dev
-```
+yarn install
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Frontend: Next.js 15, React 19, Tailwind CSS 4, Motion, Lottie
 
-## Learn More
+UI Tools: Lucide React, MUI Sidebar, HoverBorderGradient, GridPattern
 
-To learn more about Next.js, take a look at the following resources:
+Backend: Express, Supabase Auth, PostgreSQL
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+AI & RAG: LangChain, Google Generative AI (Gemini), Embeddings
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+File Processing: pdf-parse, mammoth (DOCX → text)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 📦 Dependencies Highlight
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Some niche but super helpful packages:
+
+langchain → for building RAG pipelines
+
+@google/generative-ai → Gemini API SDK
+
+mammoth → clean .docx → text extraction
+
+pdf-parse → parse PDF text
+
+motion → smooth animations
+
+lottie-react → animated loaders / effects
+
+react-mui-sidebar → easy sidebar
+
+tw-animate-css → Tailwind + animate.css utility
